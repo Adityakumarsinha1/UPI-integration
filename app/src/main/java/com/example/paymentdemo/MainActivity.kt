@@ -38,11 +38,12 @@ class MainActivity : AppCompatActivity() , PaymentStatusListener{
     }
 
     private fun pay() {
-        val payeeVpa = "eazypay.589827709@icici"
-        val payeeName = "VISHVKARMA ENTERPRISES"
+        val payeeVpa = "demoupi_id"
+        val payeeName = "demo name"
         val transactionId = "TID" + System.currentTimeMillis()
         val transactionRefId = "TID" + System.currentTimeMillis()
-        val payeeMerchantCode = ""
+//        note - if payments are not completed leave the merchant code empty.
+        val payeeMerchantCode = "demo merchant code"
         val description = field_description.text.toString()
         val amount = field_amount.text.toString()
 //        val paymentAppChoice = radioAppChoice
